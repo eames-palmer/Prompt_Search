@@ -1,0 +1,2 @@
+# Prompt_Search
+A chrome extension enabling prompted searches through Google search queries using user-defined keyboard shortcuts.
