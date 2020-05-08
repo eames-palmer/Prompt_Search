@@ -13,6 +13,7 @@
     },
     "browser_action": {
         "default_icon": "icon.png",
-        "default_title": "Prompt Search: Set Keybinding in chrome://extensions/shortcuts"
+        "default_title": "Prompt Search: Set Keybinding in chrome://extensions/shortcuts",
+        "default_popup": "popup.html"
     }
 }
