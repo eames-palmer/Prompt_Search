@@ -1,0 +1,25 @@
+#search_input {
+    width: max-content;
+    height: 2em;
+    background-color: black;
+    border-color: white;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4em;
+    border-width: 0.15em;
+    border-style: none none solid none;
+    border-image-source: linear-gradient(45deg,#f857a6, #ff5858);
+    border-image-slice: 1;
+    outline: none;
+    color: white;
+    margin-right: .25em;
+}
+
+#body {
+    background-color: black;
+    display: flex;
+}
+
+#icon {
+    height: 8em;
+}
