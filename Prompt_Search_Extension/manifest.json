@@ -1,18 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Global Search",
-    "version": "0.1",
+    "name": "Prompt Search",
+    "version": "0.2",
     "permissions": [
         "activeTab"
     ],
-    "commands": {
-        "toggle-feature-foo": {
-            "suggested_key": {
-                "default": "Alt+Shift+A"
-            },
-            "description": "Toggle feature foo"
-        }
-    },
     "background": {
         "matches": [
             "<all_urls>"
