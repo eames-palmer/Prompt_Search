@@ -2,7 +2,7 @@
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if(message.popupOpen) {
         if (message.popupOpen.startsWith("url:")) {
-            chrome.tabs.update(null, {url: "" + message.popupOpen.substring(4)});
+            chrome.tabs.update(null, {url: "https://" + message.popupOpen.substring(5)});
         } else if (message.popupOpen.startsWith("ddg:")) {
             chrome.tabs.update(null, {url: "https://duckduckgo.com/?q=" + message.popupOpen.substring(4)});
         } else if (message.popupOpen.startsWith("spg:")){

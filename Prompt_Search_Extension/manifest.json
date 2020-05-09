@@ -6,6 +6,7 @@
     "permissions": [
         "activeTab"
     ],
+    "persistant": "false",
     "background": {
         "matches": [
             "<all_urls>"
