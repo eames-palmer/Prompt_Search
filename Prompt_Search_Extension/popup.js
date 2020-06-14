@@ -1,12 +1,14 @@
-// Stores a reference to the search field
-var search_input = document.getElementById('search_input');
+/* Stores a reference to the search field */
+var searchInput = document.getElementById('search_input');
 
-// Moves Cursor to Search Field
-search_input.focus();
+/* Moves Cursor to Search Field */
+searchInput.focus();
 
-// Sends a message to background.js with input value on search input submission
-search_input.addEventListener('keypress', function() {
+/*
+ * Sends a message to background.js with input value on search input submission
+ */
+searchInput.addEventListener('keypress', function() {
     if (event.key === "Enter") {
-        chrome.runtime.sendMessage({popupOpen: search_input.value});
+        chrome.runtime.sendMessage({popupOpen: searchInput.value});
     }
 });

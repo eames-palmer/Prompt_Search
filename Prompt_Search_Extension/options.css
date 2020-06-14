@@ -1,0 +1,32 @@
+
+#content {
+    position: absolute;
+    margin: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -250px;
+    font-size: xx-large;
+}
+
+#search_engine {
+    width: max-content;
+    text-align: center;
+    font-size: xx-large;
+    outline: none;
+    border: white;
+    margin-bottom: .5em;
+}
+
+#save {
+    font-size: xx-large;
+    color: black;
+    outline: none;
+    background-color: white;
+    border: black;
+    outline: none;
+    margin-bottom: .5em;
+}
