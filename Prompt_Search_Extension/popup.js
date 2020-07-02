@@ -1,32 +1,32 @@
-/*
- * Stores a reference to the search field.
+/**
+ * Stores a reference to the search field element.
  */
-const searchInput = document.getElementById('search_input');
+let searchInput = document.getElementById('search-input');
 
-/*
- * Moves cursor to search field.
+/**
+ * Moves user's cursor to search field.
  */
 searchInput.focus();
 
-/*
+/**
  * Stores past enteries (the history) of the search input field.
  */
-var queries;
+let queries;
 
-/*
+/**
  * Stores the user's current location within the history.
  */
-var queriesLocation;
+let queriesLocation;
 
-/*
- * Initializes queries from storage.
+/**
+ * Initializes queries from chrome's local storage.
  */
 chrome.storage.sync.get(['queryHistory'], result => {
     queries = result.queryHistory;
     queriesLocation = queries.length;
 });
 
-/*
+/**
  * Sends a message to background.js with input value on search input submission.
  */
 searchInput.addEventListener('keydown', () => {
@@ -73,7 +73,7 @@ searchInput.addEventListener('keydown', () => {
     }
 });
 
-/*
+/**
  * Update query history with each new keypress.
  */
 searchInput.addEventListener('keyup', () => {

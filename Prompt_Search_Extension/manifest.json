@@ -3,7 +3,7 @@
     "name": "Prompt Search",
     "options_page": "options.html",
     "description": "Search the web from anywhere in chrome using a keyboard shortcut! [Includes searching while in Fullscreen mode.]",
-    "version": "0.0",
+    "version": "0.0.1",
     "permissions": [
         "activeTab",
         "storage"

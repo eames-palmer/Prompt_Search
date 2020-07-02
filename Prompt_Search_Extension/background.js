@@ -1,4 +1,4 @@
-/*
+/**
  * Sets default search engine to google and initializes the query history.
  */
 chrome.runtime.onInstalled.addListener(() => {
@@ -8,11 +8,11 @@ chrome.runtime.onInstalled.addListener(() => {
     }, null);
 });
 
-/*
+/**
  * Updates the current tab's URL with search engine query of user's search
  * field input.
  *
- * message: a message containing the search input value.
+ * @param {object} message - a message containing the search input value.
  */
 function handleQuery(message) {
     chrome.storage.sync.get(['defaultSearchEngine'], result => {
@@ -57,7 +57,9 @@ function handleQuery(message) {
     });
 }
 
-/*
+/**
  * On message send the message containing a query to be handled.
+ *
+ * @param  {function} handleQuery - handles the message object.
  */
 chrome.runtime.onMessage.addListener(handleQuery);

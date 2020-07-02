@@ -1,12 +1,12 @@
-/*
- * Saves the state of options.html.
+/**
+ * Saves the state of options that are present within the HTML page.
  */
 function saveOptions() {
-    var searchEngine = document.getElementById('search_engine').value;
+    let searchEngine = document.getElementById('search-engine').value;
     chrome.storage.sync.set({
         defaultSearchEngine: searchEngine
     }, function() {
-        var status = document.getElementById('status');
+        let status = document.getElementById('status');
         status.textContent = 'Options Saved!';
         setTimeout(function() {
         status.textContent = '';
@@ -14,23 +14,23 @@ function saveOptions() {
     });
 }
 
-/*
- * Restores the state of options.html.
+/**
+ * Restores the state of the options present on the HTML page.
  */
 function restoreOptions() {
     chrome.storage.sync.get(['defaultSearchEngine'], function(items) {
-        document.getElementById('search_engine').value =
+        document.getElementById('search-engine').value =
             items.defaultSearchEngine;
     });
 }
 
-/*
- * Restores the state of options.html on load.
+/**
+ * Restores the state of the options as soon as the page loads.
  */
 document.addEventListener('DOMContentLoaded', restoreOptions);
 
-/*
- * Saves the state of options.html when the save button is clicked.
+/**
+ * Saves the state of the options when the save button is clicked.
  */
 document.getElementById('save').addEventListener('click',
     saveOptions);
