@@ -13,3 +13,7 @@ Features:
 Future Features:
 - Different theme options
 - Custom search engines
+
+Similar Projects:
+- Tridactyl for Firefox
+- Vimium for Chrome
